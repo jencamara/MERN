@@ -1,10 +1,13 @@
+// parent class
 class Ninja {
+    // include the defaults within the parameters
     constructor (speed=3, strength=3, name, health =10){
         this.speed = speed;
         this.strength = strength;
         this.name = name;
         this.health = health;
     }
+    // methods
     sayName(){
         console.log(this.name);
     }
@@ -19,22 +22,26 @@ class Ninja {
     }
 }
 
+// child class
 class superSensei extends Ninja{
     constructor(name){
         super(10, 10, name, 200);
+        // new attribute
         this.wisdom = 10;
         
     }
+    // new method for child class
     speakWisdom(){
-        super.drinkSake();
-        console.log("What one programmer can do in one month, two programmers can do in two months.");
+        // calling the parent method
+        super.drinkSake(); 
+        // console log a message
+        console.log("practice, practice, practice.");
     }
     
 }
 
-// example output
+//output
 const superSensei = new Sensei("Master Splinter");
 superSensei.speakWisdom();
-// -> "What one programmer can do in one month, two programmers can do in two months."
 superSensei.showStats();
-// -> "Name: Master Splinter, Health: 210, Speed: 10, Strength: 10"
+

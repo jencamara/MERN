@@ -42,7 +42,7 @@ class superSensei extends Ninja{
 }
 
 //output
-const theSensei = new superSensei("Master Splinter");
+const theSensei = new superSensei("Master AirBender");
 theSensei.speakWisdom();
 theSensei.showStats();
 

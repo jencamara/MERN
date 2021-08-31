@@ -1,9 +1,9 @@
 class Ninja {
-    constructor (name, health){
+    constructor (name, health = 0){
         this.speed = 3;
         this.strength = 3;
         this.name = name;
-        this.health = 0;
+        this.health = health;
     }
     sayName(){
         console.log(this.name);

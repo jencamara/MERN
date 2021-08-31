@@ -25,6 +25,7 @@ class Ninja {
 // child class
 class superSensei extends Ninja{
     constructor(name){
+        // defaults for the attributes
         super(10, 10, name, 200);
         // new attribute
         this.wisdom = 10;
@@ -41,7 +42,7 @@ class superSensei extends Ninja{
 }
 
 //output
-const superSensei = new Sensei("Master Splinter");
-superSensei.speakWisdom();
-superSensei.showStats();
+const theSensei = new superSensei("Master Splinter");
+theSensei.speakWisdom();
+theSensei.showStats();
 
